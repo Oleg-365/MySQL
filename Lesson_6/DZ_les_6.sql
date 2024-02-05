@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS Dz_les_6;
 CREATE DATABASE IF NOT EXISTS Dz_les_6;
 USE Dz_les_6;
 
--- Task_1
+-- Task_1 Создайте процедуру, которая принимает кол-во сек и формат их в кол-во дней часов. Пример: 123456 ->'1 days 10 hours 17 minutes 36 seconds '
 DELIMITER //
 CREATE PROCEDURE TimeData(num INT)
 BEGIN
@@ -16,7 +16,7 @@ DELIMITER ;
 CALL TimeData(123456);
 
 
--- Task_2
+-- Task_2 Создайте функцию, которая выводит только четные числа от 1 до 10. Пример: 2,4,6,8,10
 DELIMITER // 
 CREATE FUNCTION input_even (num INT) 
 RETURNS VARCHAR(256) 
